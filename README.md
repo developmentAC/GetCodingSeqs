@@ -46,8 +46,13 @@ Note: shown above, the size of the extracted sequences is 400 base-pairs but thi
 
 ### Future Work
 
-This is a program to convert DNA sequences to piano music.
-The documentation for this project is coming soon to help
-users to use and enjoy this project. In the meantime,
-there is online help in the Python code to help the
-user to run the program.
+This is a program to used primarily to obtain DNA sequence data.
+One of the main reasons to create genetic data as sequence files is 
+to facilitate and provide data for another excellent project:
+[Genmus](https://github.com/developmentAC/geneticMusic),
+which converts DNA `fasta` sequences into piano music.
+
+This is also a work in progress. If you see anyway to improve it, 
+please let me know, or actually make that improvement in the code
+via a pull request. I would be very grateful for any productive input
+that you may have. 
