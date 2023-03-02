@@ -34,8 +34,8 @@
 #       exact: false
 
 # --> check the Python program
-- geneticmusic/geneticmusic/main.py:
-  - description: Ensure that the main.py file exists in the geneticmusic/geneticmusic directory
+- gcs/gcs/main.py:
+  - description: Ensure that the main.py file exists in the gcs/gcs directory
     check: ConfirmFileExists
   # - description: Complete all TODOs, remove the TODO markers in the summarize.py
   #   check: MatchFileFragment
