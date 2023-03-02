@@ -33,15 +33,17 @@ banner1_str = """
 \t    ╚═════╝  ╚═════╝╚══════╝   
 """
 
+
 def displayBanner(displayCount_int):
-    """ display banner with some randomly selected colour. The argument is the number of times 
+    """display banner with some randomly selected colour. The argument is the number of times
     to make the display."""
     for i in range(displayCount_int):
-        red_int   = random.choice(range(0,255))
-        green_int = random.choice(range(0,255))
-        blue_int  = random.choice(range(0,255))
+        red_int = random.choice(range(0, 255))
+        green_int = random.choice(range(0, 255))
+        blue_int = random.choice(range(0, 255))
         colStyle_str = f"rgb({red_int},{green_int},{blue_int})"
-        console.print(banner1_str, style = colStyle_str)
+        console.print(banner1_str, style=colStyle_str)
+
 
 # end of displayBanner()
 
@@ -64,9 +66,12 @@ def helper():
     console.print("\tOptions:")
     console.print(f"\t [+] --bighelp : This page, right?")
     console.print(f"\t [+] Produce reduced-sized sequences from a genbank file.")
-    console.print(f"\t\t :smiley: poetry run {THISPROG} --data-file data/df.gb") 
+    console.print(f"\t\t :smiley: poetry run {THISPROG} --data-file data/df.gb")
     console.print(f"\t [+] Produce full-sized sequences from a genbank file")
-    console.print(f"\t\t :smiley: poetry run {THISPROG} --data-file data/df.gb --fullseqs")
+    console.print(
+        f"\t\t :smiley: poetry run {THISPROG} --data-file data/df.gb --fullseqs"
+    )
+
 
 # end of helper()
 
@@ -77,7 +82,6 @@ def helper_extended():
     print(f"\n\t You are to run {THISPROG} using poetry.")
 
     # end of helper_extended()
-
 
 
 def checkDataDir(dir_str):
@@ -93,6 +97,8 @@ def checkDataDir(dir_str):
     except OSError:
         # printErrorByPlatform("\t Error creating directory or directory already present ... ")
         return 0
+
+
 # end of checkDataDir()
 
 
@@ -107,6 +113,8 @@ def get_platformType():
     if sys.platform not in platforms:
         return sys.platform
     return platforms[sys.platform]
+
+
 # end of get_platformType()
 
 
