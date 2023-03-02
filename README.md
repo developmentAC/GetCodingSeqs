@@ -1,4 +1,4 @@
-# GetCodingSequences: a coding/non-coding sequence extractor from Genbank files.
+# GetCodingSequences: a coding/non-coding sequence extractor to be used with Genbank files.
 
 ### Oliver Bonham-Carter, [Allegheny College](https://allegheny.edu/)
 ### email: obonhamcarter@allegheny.edu
