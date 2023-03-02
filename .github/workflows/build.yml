@@ -57,7 +57,7 @@ jobs:
         - name: Run Python Program
           if: always()
           run: |
-            cd genmus
+            cd gcs
             poetry install
             poetry run gcs --bighelp
         # Run the black code formatter in checking mode
