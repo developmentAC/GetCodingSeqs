@@ -59,7 +59,7 @@ jobs:
           run: |
             cd genmus
             poetry install
-            poetry run genmus --bighelp
+            poetry run gcs --bighelp
         # Run the black code formatter in checking mode
    #     - name: Run Black Code Formatter
    #       run: |
