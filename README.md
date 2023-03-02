@@ -32,15 +32,22 @@ GCS works by locating the coding sequences from a GenBank file by finding their 
 ```
 Note: shown above, the size of the extracted sequences is 400 base-pairs but this value may be customized in main.py, along with the number of sequences to produce. 
 
-by parsing their locations out of a GenBank record, as shown in Figure 2.
 ## Running the code
+```
+* Setup with Poetry : 
+    + poetry install
+* Find online help:
+    + poetry run gcs --bighelp : extensive help
+* Produce reduced-sized sequences from a genbank file:
+    + poetry run gcs --data-file data/df.gb
+* Produce full-sized sequences from a genbank file:
+    + poetry run gcs --data-file data/df.gb --fullseqs
+```
 
-	 [--bighelp] This page, right?
-	 [--opt S] Create a music scale
-	 [--opt T] Create song: Twinkle-Twinkle Little Star
-	 [--opt H] Create song: Happy Birthday
-	 [--data ./data --file file.fasta] Load fasta file, convert dna to score
-	 Setup with Poetry :  poetry install
+### Future Work
 
-     😀 USAGE: poetry run genmus --dir ./data/ --file mydata.fasta 
-
+This is a program to convert DNA sequences to piano music.
+The documentation for this project is coming soon to help
+users to use and enjoy this project. In the meantime,
+there is online help in the Python code to help the
+user to run the program.
