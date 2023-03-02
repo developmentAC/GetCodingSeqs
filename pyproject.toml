@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "gcs"
-version = "0.1.0"
+version = "0.1.3"
 description = ""
 authors = ["Oliver Bonham-Carter <obonhamcarter@allegheny.edu>"]
 readme = "README.md"
