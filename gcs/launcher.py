@@ -15,7 +15,7 @@ from rich.console import Console
 import os, random, sys
 
 THISPROG = sys.argv[0].replace("./", "")
-WHATISTHIS_p1 = f"\n\t{THISPROG}: Gathers random DNA coding and non-coding sequences from Genbank file."
+WHATISTHIS_p1 = f"\n\t{THISPROG}: Gathers coding and non-coding genetic sequences (DNA) from Genbank files. \n\t These sequences may be used as data for other tools."
 WHATISTHIS_p2 = (
     "\t Use option '-h' for more glorification about this amazing project!\n"
 )
@@ -49,35 +49,24 @@ def displayBanner(displayCount_int):
 # banner ref: https://manytools.org/hacker-tools/ascii-banner/
 
 
-
-
 def helper():
     """Cheap and friendly online help; how to use the program"""
     displayBanner(1)  # print up one banner screen
-    print(WHATISTHIS_p1)
+    console.print(WHATISTHIS_p1)
     h_str1 = "\t" + DATE + " | version: " + VERSION
     h_str2 = "\t" + AUTHOR + "\n\tmail: " + AUTHORMAIL
-    print("\t" + len(h_str2) * "-")
-    print(h_str1)
-    print("\t" + len(h_str2) * "-")
-    print(h_str2)
+    console.print("\t" + len(h_str2) * "-")
+    console.print(h_str1)
+    console.print("\t" + len(h_str2) * "-")
+    console.print(h_str2)
     # print(h_str2)
-    print("\t" + len(h_str2) * "-")
-    print("\tOptions:")
-    print(f"\t [+] --bighelp]\n\t This page, right?")
-    # print(
-    #     printWithColour(BIGreen, f"\t [+]"),
-    #     printWithColour(BICyan, "[--opt S]"),
-    #     printWithColour(BIYellow, "Create a music scale"),
-    # )
-
-    # print(
-    #     printWithColour(BIGreen, f"\t [+]"),
-    #     printWithColour(BICyan, "Setup with Poetry : "),
-    #     printWithColour(BIYellow, "poetry install")
-
-    print(f"\n\t [+] \U0001f600 USAGE: poetry run {THISPROG} --data-file df.gb ")
-    # print("\n\t # --------------------------"
+    console.print("\t" + len(h_str2) * "-")
+    console.print("\tOptions:")
+    console.print(f"\t [+] --bighelp : This page, right?")
+    console.print(f"\t [+] Produce reduced-sized sequences from a genbank file.")
+    console.print(f"\t\t :smiley: poetry run {THISPROG} --data-file data/df.gb") 
+    console.print(f"\t [+] Produce full-sized sequences from a genbank file")
+    console.print(f"\t\t :smiley: poetry run {THISPROG} --data-file data/df.gb --fullseqs")
 
 # end of helper()
 
