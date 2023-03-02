@@ -37,7 +37,7 @@ Note: shown above, the size of the extracted sequences is 400 base-pairs but thi
 * Setup with Poetry : 
     + poetry install
 * Find online help:
-    + poetry run gcs --bighelp : extensive help
+    + poetry run gcs --bighelp
 * Produce reduced-sized sequences from a genbank file:
     + poetry run gcs --data-file data/df.gb
 * Produce full-sized sequences from a genbank file:
