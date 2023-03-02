@@ -22,7 +22,11 @@ def getCodingData(myFile_str, numOfSeqs_int, maxSize_int):
             # console.print(":poop:SOURCE!!")
             pass
         else: # all other types of features, not source
-            if counter == numOfSeqs_int: break # limit the selection to the numOfSeqs_int
+
+            # you want to limit the number of sequences, uncomment the line below.
+            # if counter == numOfSeqs_int: break # limit the selection to the numOfSeqs_int
+
+
             location_str = str(tmp.location)
             start = tmp.location.start
             end = tmp.location.end
