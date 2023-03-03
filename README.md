@@ -34,7 +34,7 @@ Note: shown above, the size of the extracted sequences is 400 base-pairs but thi
 
 ## Running the code
 
-You must first install [Poetry](https://python-poetry.org/) to manage the sode's dependencies, and to run the program.
+You must first install [Poetry](https://python-poetry.org/) to manage the code's dependencies, and to run the program.
 
 ```
 * Setup with Poetry : 
