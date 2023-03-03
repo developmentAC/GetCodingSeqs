@@ -33,6 +33,9 @@ GCS works by locating the coding sequences from a GenBank file by finding their 
 Note: shown above, the size of the extracted sequences is 400 base-pairs but this value may be customized in main.py, along with the number of sequences to produce. 
 
 ## Running the code
+
+You must first install [Poetry](https://python-poetry.org/) to manage the sode's dependencies, and to run the program.
+
 ```
 * Setup with Poetry : 
     + poetry install
@@ -43,6 +46,8 @@ Note: shown above, the size of the extracted sequences is 400 base-pairs but thi
 * Produce full-sized sequences from a genbank file:
     + poetry run gcs --data-file data/df.gb --fullseqs
 ```
+
+**OUTPUT**: All output files are saved in the directory `0_out/
 
 ## Future Work
 
