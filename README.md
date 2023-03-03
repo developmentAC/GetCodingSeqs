@@ -49,6 +49,9 @@ You must first install [Poetry](https://python-poetry.org/) to manage the sode's
 
 **OUTPUT**: All output files are saved in the directory `0_out/
 
+* Coding files (`C_startLocation-endLocation.fasta`) are named according to their locations as detailed in GenBank files.
+* The noncoding sequencs (`nC_0.fasta`) are arbitrariliy selected from the DNA text string after all the coding material has been removed from the super sequence.
+
 ## Future Work
 
 This is a program to used primarily to obtain DNA sequence data.
