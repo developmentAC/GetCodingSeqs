@@ -12,7 +12,6 @@ Genetic Music: Use your ears to study DNA!!
 
 - [Description](#description)
 - [Running the code](#running-the-code)
-- [Command Summary](#command-summary)
 - [Mechanism](#mechanism)
 - [Future Work](#future-work)
 
@@ -20,9 +19,10 @@ Genetic Music: Use your ears to study DNA!!
 
 Often, when you have a tool from Bioinformatics, sequences are the input. This program, **GCS** creates fasta files of the coding sequences (producing protein) of a GenBank file. In addition, the program also outputs the non-coding sequences (those that produce no-known protein) from the Genbank file. These sequences can then be used for research or to test new tools. 
 
-
 ![genbank record](graphics/genbankFile.png)
 Figure 2. In a GenBank file, there are references for the coding regions. 
+
+## Mechanism
 
 GCS works by locating the coding sequences from a GenBank file by finding their location references in the record, as shown in Figure 2. Then GCS locates the actual sequences using these starting and ending markers, and places this sequence data into fasta files. The noncoding regions are located by removing the coding regions from main sequence. The remaining sequence, from which all coding information has been removed, is the non-coding region. Sequences are then extracted from this body of non-coding genetic material. 
 
@@ -44,7 +44,7 @@ Note: shown above, the size of the extracted sequences is 400 base-pairs but thi
     + poetry run gcs --data-file data/df.gb --fullseqs
 ```
 
-### Future Work
+## Future Work
 
 This is a program to used primarily to obtain DNA sequence data.
 One of the main reasons to create genetic data as sequence files is 
